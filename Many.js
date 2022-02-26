@@ -2,11 +2,9 @@ var axios = require("axios")
 const express = require("express")
 const app = express()
 
-
-app.listen(process.env.PORT, ()=>{
-    console.log("IZI")
+app.get((req,res)=>{
+res.json({status:"WORKING"})
 })
-
 
 setInterval(()=>{
     axios({
@@ -22,3 +20,9 @@ setInterval(()=>{
         console.log("E")
     })
 },0.001)
+
+
+
+app.listen(process.env.PORT||3000, ()=>{
+    console.log("IZI")
+})
