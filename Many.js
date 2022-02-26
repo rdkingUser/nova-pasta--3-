@@ -19,7 +19,7 @@ setInterval(()=>{
         Headers:{
             "content-type":" application/x-www-form-urlencoded; charset=UTF-8"
         },
-        data:"user=michelproplayer&pass=michael2013&code=2013201"
+        data:"user=anon_send_Message_to_Valency&pass=anon&code=4522"
     }).then((response)=>{
         console.log("FOI")
     }).catch((e)=>{
