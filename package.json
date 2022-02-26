@@ -4,7 +4,7 @@
   "description": "",
   "main": "Many.js",
   "scripts": {
-    "start": "node many.js",
+    "start": "node Many.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
