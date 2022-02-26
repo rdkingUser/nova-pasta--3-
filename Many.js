@@ -14,10 +14,12 @@ app.listen(process.env.PORT, ()=>{
 
 setInterval(()=>{
     axios({
-        url:"http://testphp.vulnweb.com/categories.php",
-        method:"GET",
+        url:"http://testphp.vulnweb.com/search.php?test=query",
+        method:"POST",
         Headers:{
-        }
+            "content-type":"application/x-www-form-urlencoded",
+        },
+        data:"searchFor=aaa&goButton=go"
     }).then((response)=>{
         console.log(response.data)
     }).catch((e)=>{
