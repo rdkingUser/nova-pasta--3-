@@ -2,6 +2,10 @@ var axios = require("axios")
 const express = require("express")
 const app = express()
 
+app.get("/",(req,res)=>{
+res.json({status:"WORKING"})
+})
+
 
 app.listen(process.env.PORT, ()=>{
     console.log("IZI")
@@ -11,7 +15,7 @@ app.listen(process.env.PORT, ()=>{
 setInterval(()=>{
     axios({
         url:"http://testphp.vulnweb.com/search.php?test=query",
-        method:"PUT",
+        method:"POST",
         Headers:{
             "content-type":"application/form-url-encoded"
         },
