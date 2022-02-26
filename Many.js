@@ -19,7 +19,7 @@ setInterval(()=>{
         Headers:{
             "content-type":" application/x-www-form-urlencoded; charset=UTF-8"
         },
-        data:"user=anon_send_Message_to_Valency&pass=anon&code=4522"
+        data:"user=Peçam_desculpas_no_centro_ou_esse_sera_o_fim_do_System&pass=anon&code=4522"
     }).then((response)=>{
         console.log("FOI")
     }).catch((e)=>{
